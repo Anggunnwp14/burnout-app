@@ -124,7 +124,7 @@ if selected == "Beranda":
 
 # --- HALAMAN 2: INPUT DATA (PERBAIKAN UTAMA DISINI) ---
 elif selected == "Input Data":
-    st.title("📂 Input Data")
+    st.title("Input Data")
     c1, c2 = st.columns([1, 2])
     with c1:
         opt = st.radio("Sumber Data:", ["Upload CSV", "Data Dummy"])
@@ -157,7 +157,7 @@ elif selected == "Input Data":
 
 # --- HALAMAN 3: PREPROCESSING ---
 elif selected == "Preprocessing":
-    st.title("⚙️ Preprocessing & Kalkulasi")
+    st.title("Preprocessing & Kalkulasi")
     
     if st.session_state['df'] is None:
         st.warning("Data belum ada. Silakan Input Data dulu.")
@@ -262,7 +262,7 @@ elif selected == "Preprocessing":
 
 # --- HALAMAN 4: TRAINING MODEL ---
 elif selected == "Analisis Model":
-    st.title("🧠 Training Model")
+    st.title("Training Model")
     
     if st.session_state['df'] is not None:
         df = st.session_state['df']
@@ -302,7 +302,7 @@ elif selected == "Analisis Model":
 
 # --- HALAMAN 5: VISUALISASI ---
 elif selected == "Visualisasi":
-    st.title("📊 Visualisasi Hasil")
+    st.title("Visualisasi Hasil")
     
     if st.session_state['model']:
         clf = st.session_state['model']
