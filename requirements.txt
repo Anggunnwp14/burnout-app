@@ -5,4 +5,4 @@ scikit-learn
 matplotlib
 seaborn
 streamlit-option-menu
-plotlyg
+plotly
